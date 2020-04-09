@@ -5,6 +5,14 @@ Since the API has a very low rate limit, there has been an additional error syst
 
 **If you search for a stock and the API limit has been reached, wait for some time, and then refresh the page to see your data.**
 
+## Web Service(s) Used
+The API that is being used to request information about the stock market is named Alpha Vantage. This open and free API provides basic & advanced information about stock market, and allows developers to access the information using simple requests.
+* The three API functions that will be utilized in this web-app are:
+    * Quote Endpoint (GLOBAL_QUOTE) - Provides data about stock
+    * Search Endpoint (SYMBOL_SEARCH) - Gives search predictions
+    * Monthly Stock Time Series Endpoint (TIME_SERIES_MONTHLY) - Last Month of Historical Data
+* https://www.alphavantage.co/documentation/
+
 In order to set things up properly, first:
 
     $ npm install
