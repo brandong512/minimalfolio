@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minimalfolio</title>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/9d3c3eb638.js" crossorigin="anonymous"></script>
+
+
+  <style type="text/css">
+    .search-form{
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .input-group{
+      min-width: 470px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 style="margin: 20px">Minimalfolio</h1>
+  <form class="container search-form" name="stock_form" action="results.html" method="GET">
+
+   <div class="input-group col-md-4">
+    <input class="form-control py-2 border-right-0 border" type="text" placeholder="Type in a stock..." id="search-term" name="symbol">
+    <span class="input-group-append">
+      <button class="btn btn-outline-secondary border-left-0 border" type="submit" id="search-button" disabled>
+        <i class="fa fa-search"></i>
+      </button>
+    </span>
+  </div>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+
+<script src="src/api.js"></script>
+<script src="src/search.js"></script>
+<script>window.MinimalfolioSearchController.init()</script>
+
+</body>
+</html>
